@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="930" height="484" viewBox="0 0 930 484" role="img" aria-labelledby="title desc"><title id="title">Build an index of records and their parents</title><desc id="desc">Verbatim excerpt from NextTask backend/tree-integrity.js, lines 38–50, commit 3b42a27b27b0c02bca86a067d14974e143326617.</desc><rect width="930" height="484" rx="14" fill="#14242e"/><path d="M0 60H930" stroke="#3b4d57"/><text x="28" y="37" fill="#c0d1d7" font-family="monospace" font-size="17">NextTask / backend/tree-integrity.js</text>
+<text x="26" y="99" fill="#83969e" font-family="monospace" font-size="16">38</text>
+<text x="78" y="99" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3"></tspan><tspan fill="#a9d5c2">function</tspan><tspan fill="#ecf1f3"> indexNodes(rows) {</tspan></text>
+<text x="26" y="127" fill="#83969e" font-family="monospace" font-size="16">39</text>
+<text x="78" y="127" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> byId = </tspan><tspan fill="#a9d5c2">new</tspan><tspan fill="#ecf1f3"> Map();</tspan></text>
+<text x="26" y="155" fill="#83969e" font-family="monospace" font-size="16">40</text>
+<text x="78" y="155" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> childrenByParent = </tspan><tspan fill="#a9d5c2">new</tspan><tspan fill="#ecf1f3"> Map();</tspan></text>
+<text x="26" y="183" fill="#83969e" font-family="monospace" font-size="16">41</text>
+<text x="78" y="183" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3"></tspan></text>
+<text x="26" y="211" fill="#83969e" font-family="monospace" font-size="16">42</text>
+<text x="78" y="211" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">for</tspan><tspan fill="#ecf1f3"> (</tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> row </tspan><tspan fill="#a9d5c2">of</tspan><tspan fill="#ecf1f3"> rows) {</tspan></text>
+<text x="26" y="239" fill="#83969e" font-family="monospace" font-size="16">43</text>
+<text x="78" y="239" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        byId.set(String(row.id), row);</tspan></text>
+<text x="26" y="267" fill="#83969e" font-family="monospace" font-size="16">44</text>
+<text x="78" y="267" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> parentKey = row.parent_id == null ? null : String(row.parent_id);</tspan></text>
+<text x="26" y="295" fill="#83969e" font-family="monospace" font-size="16">45</text>
+<text x="78" y="295" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        </tspan><tspan fill="#a9d5c2">if</tspan><tspan fill="#ecf1f3"> (!childrenByParent.has(parentKey)) childrenByParent.set(parentKey, []);</tspan></text>
+<text x="26" y="323" fill="#83969e" font-family="monospace" font-size="16">46</text>
+<text x="78" y="323" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        childrenByParent.get(parentKey).push(row);</tspan></text>
+<text x="26" y="351" fill="#83969e" font-family="monospace" font-size="16">47</text>
+<text x="78" y="351" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    }</tspan></text>
+<text x="26" y="379" fill="#83969e" font-family="monospace" font-size="16">48</text>
+<text x="78" y="379" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3"></tspan></text>
+<text x="26" y="407" fill="#83969e" font-family="monospace" font-size="16">49</text>
+<text x="78" y="407" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">return</tspan><tspan fill="#ecf1f3"> { byId, childrenByParent };</tspan></text>
+<text x="26" y="435" fill="#83969e" font-family="monospace" font-size="16">50</text>
+<text x="78" y="435" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">}</tspan></text>
+</svg>
