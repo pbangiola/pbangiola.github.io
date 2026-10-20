@@ -1,164 +1,62 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Paul Bangiola's data portfolio: learner onboarding, data governance, assessment analysis, instructional improvement, and knowledge management. Anonymized case studies and aggregate outcomes.">
-<title>Data work | Paul Bangiola</title>
-<style>
-:root{color-scheme:light;--ink:#182434;--muted:#59677a;--line:#dce3e9;--accent:#176b65;--paper:#fff;--bg:#f7f9fa}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
-main{max-width:1040px;margin:auto;padding:32px 24px 72px}a{color:var(--accent);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px;border-radius:2px}
-.skip{position:absolute;left:24px;top:-100px;background:var(--paper);padding:12px;z-index:2}.skip:focus{top:8px}.topnav{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line);font-size:.95rem}.topnav .name{color:var(--ink);font-weight:750;text-decoration:none}
-header{padding:56px 0 28px}.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:750;color:var(--accent)}h1{font-size:clamp(2.8rem,7vw,4.8rem);line-height:1.08;letter-spacing:-.05em;margin:14px 0 22px}h2{font-size:clamp(1.7rem,4vw,2.2rem);line-height:1.2;letter-spacing:-.03em;margin:10px 0 22px}h3{font-size:1.05rem;line-height:1.35;margin:24px 0 8px}p{margin:0 0 16px}.lead{font-size:clamp(1.15rem,2.7vw,1.4rem);max-width:780px;color:var(--muted)}.intro{max-width:780px;color:var(--muted)}
-.case-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:26px 0 40px}.case-nav a{padding:16px 20px;background:var(--paper);border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:700}.case-nav small{display:block;font-weight:400;color:var(--muted);margin-top:3px}
-.case{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,40px);margin:24px 0}.context{font-size:.9rem;color:var(--muted);margin:0 0 8px}.case-number{color:var(--accent);font-weight:750;font-size:.8rem;letter-spacing:.09em;text-transform:uppercase}.columns{display:grid;grid-template-columns:1fr 1fr;gap:32px}.columns h3:first-child{margin-top:0}.columns p,.case li{color:var(--muted)}ul{padding-left:22px;margin-top:8px}li{margin:7px 0}.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:24px 0}.metric strong{display:block;color:var(--accent);font-size:clamp(1.45rem,3.5vw,2rem);line-height:1.2;letter-spacing:-.03em}.metric span{display:block;color:var(--muted);font-size:.9rem;margin-top:7px}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}.tags li{font-size:.8rem;border:1px solid var(--line);border-radius:20px;padding:4px 11px;margin:0;color:var(--muted)}.note{font-size:.9rem;color:var(--muted)}details{border-top:1px solid var(--line);padding-top:15px;margin-top:24px}summary{cursor:pointer;font-weight:650;color:var(--accent)}details p{margin:14px 0 0;color:var(--muted);font-size:.95rem}
-.results{margin:24px 0}.results figcaption{font-weight:700;margin-bottom:16px}.result-row{display:grid;grid-template-columns:100px 1fr;gap:18px;align-items:center;margin:16px 0}.result-label{font-weight:650}.bar-pair{display:grid;gap:6px}.bar-row{display:grid;grid-template-columns:52px 1fr 48px;gap:10px;align-items:center;font-size:.85rem;color:var(--muted)}.track{height:15px;background:#edf1f3;border-radius:3px}.bar{display:block;height:100%;border-radius:3px;background:var(--accent)}.bar.before{background:#708695}.scale{font-size:.8rem;color:var(--muted);margin:8px 0}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}caption{text-align:left;font-weight:700;margin-bottom:10px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:12px 10px;vertical-align:top}th{color:var(--ink)}td{color:var(--muted)}footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
-@media(max-width:640px){.columns,.case-nav{grid-template-columns:1fr}.columns{gap:8px}.metric-grid{grid-template-columns:1fr;gap:18px}.metric{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:center}.metric span{margin:0}.result-row{grid-template-columns:1fr;gap:6px}.topnav{font-size:.9rem}header{padding-top:36px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{body{background:white}main{max-width:none;padding:0}.case{break-inside:avoid}.skip,.case-nav{display:none}a{color:inherit}.topnav{border:0}}
-</style>
-</head>
-<body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Paul Bangiola on student data, learner access, assessment analysis, and the connections to building NextTask. Anonymized work stories, graphs, and public code."><title>Data work | Paul Bangiola</title><style>
+:root{color-scheme:light;--ink:#182434;--muted:#59677a;--line:#dce3e9;--accent:#176b65;--bg:#fafbf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:26px}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}main{max-width:1050px;margin:auto;padding:30px 24px 65px}a{color:var(--accent);text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.skip{position:absolute;top:-100px;left:24px;background:white;padding:12px}.skip:focus{top:0}.topnav{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line);font-size:.95rem}.name{font-weight:700;text-decoration:none;color:var(--ink)}header{padding:58px 0 18px}h1{font-size:clamp(2.8rem,7vw,4.7rem);letter-spacing:-.045em;line-height:1.1;margin:0 0 25px}h2{font-size:clamp(1.65rem,4vw,2.3rem);letter-spacing:-.025em;line-height:1.25;margin:0 0 25px}h3{font-size:1.1rem;line-height:1.4;margin:30px 0 12px}p{margin:0 0 22px}.prose{max-width:730px;margin-left:auto;margin-right:auto;font-size:1.075rem}.lead{font-size:1.35rem;line-height:1.6}.note,.context{font-family:system-ui,sans-serif;font-size:.9rem;color:var(--muted)}.context{margin-bottom:12px}.contents{max-width:730px;margin:20px auto 45px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;line-height:2}.contents a{display:inline-block;margin-right:20px;font-size:.95rem}article,section.closing{padding-top:54px;margin-top:45px;border-top:1px solid var(--line)}figure{margin:36px 0 40px}figure img{width:100%;height:auto;display:block;border-radius:12px}figcaption{font-size:.94rem;color:var(--muted);max-width:730px;margin:16px auto 0;line-height:1.65}figcaption strong{color:var(--ink);font-weight:650}.caption-link{display:block;margin-top:8px;font-size:.85rem}details{font-size:.92rem;color:var(--muted);margin:28px auto;max-width:730px}summary{cursor:pointer;color:var(--accent)}details p{margin-top:14px}pre{overflow-x:auto;background:#14242e;color:#edf2f3;padding:20px;border-radius:8px;font-size:.8rem;line-height:1.55}table{border-collapse:collapse;width:100%;font-size:.9rem;margin:18px 0}th,td{padding:9px;border-bottom:1px solid var(--line);text-align:left}.table-scroll{overflow-x:auto}blockquote{margin:30px 0;padding:0 0 0 24px;border-left:3px solid #b6c9c0;font-size:1.2rem;color:var(--accent)}footer{padding-top:28px;border-top:1px solid var(--line);margin-top:65px;font-size:.9rem;color:var(--muted)}.code > a{display:block;overflow-x:auto;background:#14242e;border-radius:12px}.code img{min-width:720px;max-width:none}@media(max-width:600px){main{padding:22px 20px 50px}.prose{font-size:1.025rem}.lead{font-size:1.2rem}header{padding-top:38px}article,section.closing{padding-top:36px;margin-top:32px}figure{margin:28px -6px}figcaption{padding:0 6px}.contents a{display:block}figure.code img{border-radius:6px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:white}.skip,.contents{display:none}main{padding:0}figure{break-inside:avoid}}
+</style></head><body>
 <a class="skip" href="#content">Skip to content</a>
 <main id="content">
-<nav class="topnav" aria-label="Main navigation"><a class="name" href="index.html">Paul Bangiola</a><div><a href="index.html">Projects</a> · <a href="index.html#resume">Experience</a> · <a href="#approach">My approach</a></div></nav>
-<header>
-<div class="eyebrow">Selected case studies</div>
-<h1>Data work</h1>
-<p class="lead">I make information reliable, usable, and useful for decisions.</p>
-<p class="intro">Across education technology and school leadership, I have worked on the whole path: organizing records, defining processes, analyzing patterns, explaining what they mean, and helping people act on them.</p>
-<p class="note">These case studies omit organization names and individual records. Results are reported in aggregate; no student-level data, client files, or internal documentation are included. They describe my work, rather than reproduce confidential work products.</p>
-</header>
-<nav class="case-nav" aria-label="Data case studies">
-<a href="#operations">01 · Learner data at scale<small>Provisioning, standards, and reliable operations</small></a>
-<a href="#schoolwide">02 · Schoolwide improvement<small>Achievement, growth, and intervention decisions</small></a>
-<a href="#instruction">03 · From questions to instruction<small>Reading assessment patterns in context</small></a>
-<a href="#knowledge">04 · Knowledge that people can use<small>Documentation, organization, and continuity</small></a>
-</nav>
+<nav class="topnav" aria-label="Main navigation"><a class="name" href="index.html">Paul Bangiola</a><div><a href="index.html">Projects</a> · <a href="index.html#resume">Experience</a></div></nav>
+<header class="prose"><h1>Data work</h1>
+<p class="lead">I’ve worked with student data as a teacher, a curriculum director, and an edtech implementer. In each job, I needed the data to help somebody do something: get a learner into a course, figure out what a class needed, or decide whether a change was working.</p>
+<p>Some of that work involved Python and R. Some involved Excel, permissions, or sitting down with a teacher to work through what a result actually meant. I’m interested in the whole problem, including the parts that happen before there’s anything worth putting on a graph.</p>
+<p>The projects I build now, including <a href="https://pbangiola.github.io/nexttask/">NextTask</a>, give me another way to work on those problems. A task list and a student information system serve very different purposes, but both become difficult to use when the relationships between their records stop making sense.</p>
+<p class="note">The work examples below use aggregate results and general descriptions of the organizations. Individual student records, client files, and internal documents aren’t published here. Code images come from my public NextTask repository.</p></header>
+<nav class="contents" aria-label="On this page"><a href="#operations">Getting learners access</a><a href="#schoolwide">Understanding school results</a><a href="#instruction">Reading the wrong answers</a><a href="#nexttask">The connection to NextTask</a><a href="#knowledge">Making knowledge usable</a></nav>
 
-<article class="case" id="operations" aria-labelledby="operations-title">
-<div class="case-number">Case study 01</div>
-<p class="context">Education technology provider serving correctional institutions</p>
-<h2 id="operations-title">Making learner onboarding repeatable</h2>
-<div class="columns"><div>
-<h3>The problem</h3>
-<p>Learners needed access to multiple educational services in institutions with different operating requirements. Account assignment, passwords, reporting, and support had to work consistently as implementations expanded.</p>
-<h3>My work</h3>
-<p>I built an account-provisioning process, maintained a data warehouse across jurisdictions, and designed data standards that included safeguards for learners’ personally identifying information. I used R, Python, Excel, and Google Drive to prototype, deploy, and evaluate programs.</p>
-</div><div>
-<h3>Making the process usable</h3>
-<p>I designed a way for learners to find their necessary passwords in one place, developed client reporting templates, and worked with engineering on provisioning and system stability. I also trained support associates and helped develop scripts for outsourced technical support.</p>
-<h3>What changed</h3>
-<p>The onboarding system supported thousands of learners daily with a 24-hour turnaround. The revised implementation process was repeated across 19 implementations.</p>
-</div></div>
-<div class="metric-grid" aria-label="Operational results">
-<div class="metric"><strong>24 hours</strong><span>Onboarding turnaround</span></div>
-<div class="metric"><strong>Thousands</strong><span>Of learners supported daily by the onboarding process</span></div>
-<div class="metric"><strong>19</strong><span>Implementations using the revised process</span></div>
+<article id="operations" aria-labelledby="operations-title">
+<div class="prose"><p class="context">Education technology in correctional institutions</p><h2 id="operations-title">Before anyone could learn, their accounts had to work.</h2>
+<p>When you deliver educational software in a correctional institution, getting a learner into a course involves more than handing over a tablet. The learner needs the right accounts, the accounts need to work across the services they’re using, and the people supporting them need a process they can actually follow. Different institutions also have different requirements.</p>
+<p>I built an account-provisioning process, maintained a data warehouse across jurisdictions, and developed standards for how we handled learner information, including personally identifying information. I used R, Python, Excel, and Google Drive to prototype, deploy, and evaluate the work. I also worked with engineering on provisioning and system stability.</p>
+<p>There were practical details that mattered just as much as the underlying data. Learners needed a way to find the passwords for their different services in one place. Clients needed useful reporting. Support associates needed training, and outsourced technical support needed scripts that reflected the problems people were actually running into.</p>
+<p>The onboarding system supported thousands of learners daily with a 24-hour turnaround. The revised implementation process was repeated across 19 implementations. That last part mattered to me: other people had to be able to run it, and it had to keep working as the work expanded.</p>
+<blockquote>A process that works once is a start. A process that other people can repeat is something you can build on.</blockquote>
 </div>
-<p><strong>The decision behind the data:</strong> scaling meant making the process repeatable for other people, with clear standards, training, and support.</p>
-<details><summary>Measurement and scope</summary><p>My historical records also report 99.9% fidelity for a human-mediated process and 99.7% effectiveness for a prototype. These are separate measures, not two estimates of the same result. Their denominators and evaluation conditions are not documented here, so they are not presented as a directly comparable performance chart. The number of accounts and the number of learners are also distinct.</p></details>
-<ul class="tags" aria-label="Methods"><li>Data standards</li><li>Provisioning</li><li>PII safeguards</li><li>Process evaluation</li><li>R · Python · Excel</li></ul>
+<details><summary>A note on the two reliability measures</summary><p>My records report 99.9% fidelity for a human-mediated process and 99.7% effectiveness for a prototype. Those are two different statistics. They describe different work, and I’ve kept them separate rather than drawing a comparison that the underlying measures don’t support. Account counts and learner counts are also distinct.</p></details>
 </article>
 
-<article class="case" id="schoolwide" aria-labelledby="schoolwide-title">
-<div class="case-number">Case study 02</div>
-<p class="context">K–8 school · Curriculum and instructional leadership</p>
-<h2 id="schoolwide-title">Using assessment data to guide schoolwide change</h2>
-<div class="columns"><div>
-<h3>The question</h3>
-<p>Were students making enough progress, and were the school’s curriculum and support systems meeting different learning needs? A single average could not answer both questions.</p>
-<h3>My work</h3>
-<p>I used nationally normed diagnostic assessments to track achievement and growth over multiple years. I examined results across student groups and connected those findings to curriculum adoption, interventions, and access to services.</p>
-</div><div>
-<h3>From analysis to action</h3>
-<p>I implemented a multi-tiered system of supports, helped obtain IEP and 504 documentation for students who needed it, and led curriculum changes in math and foundational literacy. Teacher coaching helped turn the analysis into classroom practice.</p>
-<h3>Data operations alongside analysis</h3>
-<p>I also administered the student information system and Google Workspace, including account provisioning, permissions, and staff support. Managing access and maintaining useful systems were part of the same job as interpreting learning results.</p>
-</div></div>
-<figure class="results" aria-labelledby="achievement-caption">
-<figcaption id="achievement-caption">Schoolwide average achievement percentile</figcaption>
-<div class="result-row"><div class="result-label">Math</div><div class="bar-pair">
-<div class="bar-row"><span>Before</span><div class="track" aria-hidden="true"><span class="bar before" style="width:52%"></span></div><span>52nd</span></div>
-<div class="bar-row"><span>After</span><div class="track" aria-hidden="true"><span class="bar" style="width:68%"></span></div><span>68th</span></div>
-</div></div>
-<div class="result-row"><div class="result-label">Reading</div><div class="bar-pair">
-<div class="bar-row"><span>Before</span><div class="track" aria-hidden="true"><span class="bar before" style="width:61%"></span></div><span>61st</span></div>
-<div class="bar-row"><span>After</span><div class="track" aria-hidden="true"><span class="bar" style="width:70%"></span></div><span>70th</span></div>
-</div></div>
-<p class="scale">Bars use a 0–100 percentile scale. Percentile rank is a comparison with a national reference group, not the percentage of questions answered correctly.</p>
-</figure>
-<div class="table-scroll"><table>
-<caption>Growth provided a second view of progress</caption>
-<thead><tr><th scope="col">Measure</th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
-<tbody><tr><th scope="row">Median annual math growth relative to the national average</th><td>87%</td><td>119%</td></tr><tr><th scope="row">Median annual reading growth relative to the national average</th><td>114%</td><td>143%</td></tr></tbody>
-</table></div>
-<p><strong>The decision behind the data:</strong> I used the results to decide where to change materials, provide additional support, and help teachers adjust instruction. Achievement and growth remained separate measures.</p>
-<details><summary>Measurement and scope</summary><p>These are aggregate before-and-after results reported in my work history, covering the baseline before my curriculum leadership through the end of my tenure. They describe change during a period of curriculum, intervention, and teacher-development work. They are not a controlled evaluation and do not isolate the effect of any one program or individual. Individual results and small-group breakdowns are omitted from this public case study.</p></details>
-<ul class="tags" aria-label="Methods"><li>Longitudinal analysis</li><li>Achievement and growth</li><li>MTSS</li><li>Curriculum evaluation</li><li>PowerSchool</li></ul>
+<article id="schoolwide" aria-labelledby="schoolwide-title"><div class="prose"><p class="context">K–8 curriculum and school leadership</p><h2 id="schoolwide-title">What would tell us whether the school was improving?</h2>
+<p>At the K–8 school where I led curriculum, I used nationally normed diagnostic results to follow student achievement and growth over multiple years. I looked across student groups and used that information in decisions about curriculum, interventions, and access to services.</p>
+<p>Achievement and growth answer different questions. A student can be ahead of the national comparison group and still be making very little progress. Another can be behind and learning quickly. If we only look at where students finished, we miss part of what happened during the year.</p>
+<p>The schoolwide results below show both views. Average math achievement moved from the 52nd to the 68th percentile, and reading from the 61st to the 70th. Median annual growth also increased: from 87% to 119% of the national average in math, and from 114% to 143% in reading.</p></div>
+<figure><a href="assets/data-work/school-results.svg" aria-label="Open the full-size school results graph"><picture><source media="(max-width: 640px)" srcset="assets/data-work/school-results-mobile.svg"><img src="assets/data-work/school-results.svg" width="1100" height="470" alt="Before and after: math achievement 52nd to 68th percentile; reading 61st to 70th. Median annual math growth 87% to 119% of the national average; reading 114% to 143%." loading="lazy"></picture></a><figcaption><strong>Growth provided a second view of progress.</strong> The left panel shows achievement percentile, which compares performance with a national reference group. The right shows median annual growth relative to the national average; the dotted line marks 100%. These are schoolwide before-and-after results across my curriculum leadership, not a controlled comparison of individual programs. Tap the graph to enlarge it.</figcaption></figure>
+<div class="prose"><p>The analysis was part of a larger job. I led changes in math and foundational literacy, implemented a multi-tiered system of supports, helped obtain IEP and 504 documentation for students who needed it, and worked with teachers on instruction. The numbers helped me decide where to look and what to ask. The next step was often a conversation about materials, a lesson, or a student who needed something different.</p>
+<p>I also administered PowerSchool and Google Workspace, including provisioning and permissions. That meant working on both sides of the problem: keeping the systems useful and making sense of the information they held.</p></div>
+<details><summary>Results in a table</summary><div class="table-scroll"><table><thead><tr><th scope="col">Measure</th><th scope="col">Before</th><th scope="col">After</th></tr></thead><tbody><tr><th scope="row">Average math achievement percentile</th><td>52nd</td><td>68th</td></tr><tr><th scope="row">Average reading achievement percentile</th><td>61st</td><td>70th</td></tr><tr><th scope="row">Median annual math growth / national average</th><td>87%</td><td>119%</td></tr><tr><th scope="row">Median annual reading growth / national average</th><td>114%</td><td>143%</td></tr></tbody></table></div><p>These aggregate results cover the baseline before my curriculum leadership through the end of my tenure. Several changes happened during that period, so the results don’t isolate the effect of one curriculum or one person. Individual results and small-group breakdowns are omitted.</p></details></article>
+
+<article id="instruction" aria-labelledby="instruction-title"><div class="prose"><p class="context">Ninth-grade English</p><h2 id="instruction-title">Sometimes the wrong answer tells you what to teach.</h2>
+<p>One of my more useful experiences with assessment data came while teaching ninth-grade grammar. The materials I was given were written as though my students simply didn’t have a command of English. But as I looked at the questions they missed, I saw particular patterns. Some involved differences between the grammar of their home dialect and the conventions expected on the test.</p>
+<p>That matters. If a student already uses a consistent grammatical system, explaining a different system as though it’s the only one can make the lesson both confusing and insulting. I started teaching those differences explicitly. I wanted students to understand what the test expected, why that answer differed from something they might say at home, and how to give the answer that would support their future.</p>
+<p>My students gained an average of four points on the 36-point pre-ACT scale over the year. I wouldn’t claim that teaching language variation alone explains that result. It was part of an original grammar and writing curriculum that I continued to improve as I learned more about what students understood.</p>
+<p>I also developed Excel tools and trained colleagues to make recurring assessment analysis less time-consuming, saving approximately three hours a week. That gave us more time to do the part that required a teacher: looking carefully at what students were doing and deciding how to respond.</p>
+<blockquote>The useful question was what the answer revealed about the student’s thinking, and what I should do with that information.</blockquote>
+<p>If I taught this again, I’d use some of the explanations I found later in the year much earlier. It was a delicate topic. Helping students understand why I was bringing up language differences, and what I meant by them, was part of the work.</p></div>
 </article>
 
-<article class="case" id="instruction" aria-labelledby="instruction-title">
-<div class="case-number">Case study 03</div>
-<p class="context">Ninth-grade English · Assessment analysis and curriculum design</p>
-<h2 id="instruction-title">Asking what a wrong answer actually means</h2>
-<div class="columns"><div>
-<h3>The problem</h3>
-<p>The supplied grammar materials treated students’ differences from standardized English as a lack of language knowledge. Looking at the questions that caused difficulty suggested a more specific instructional need.</p>
-<h3>What I noticed</h3>
-<p>Some patterns involved differences between the grammatical conventions students used in their home dialect and those expected by the test. I used that interpretation to redesign instruction rather than simply assign more of the same practice.</p>
-</div><div>
-<h3>What I changed</h3>
-<p>I taught language differences explicitly, helping students recognize the test’s expected conventions without treating their home dialect as defective. The aim was to add a useful set of conventions to students’ existing language knowledge.</p>
-<h3>Helping colleagues use data</h3>
-<p>I also developed Excel tools and trained colleagues to streamline assessment analysis, reducing the recurring time spent on data work by approximately three hours per week.</p>
-</div></div>
-<div class="metric-grid" aria-label="Instructional results">
-<div class="metric"><strong>+4.0</strong><span>Average pre-ACT scale-score gain, on a 36-point scale</span></div>
-<div class="metric"><strong>Original</strong><span>Grammar and writing curriculum informed by question-level patterns</span></div>
-<div class="metric"><strong>~3 hours</strong><span>Weekly assessment-analysis time saved through Excel tools and peer training</span></div>
-</div>
-<p><strong>The decision behind the data:</strong> an incorrect test response can reveal a difference in language conventions. Understanding the pattern changed what I taught and how I explained it.</p>
-<details><summary>Measurement and scope</summary><p>The score gain is an aggregate end-of-year result from my classroom work, not an estimate of the isolated effect of dialect-aware instruction. The language interpretation describes my instructional analysis; it is not a formal linguistic study or a conclusion about every student. Test items, student responses, names, and individual assessment records are not reproduced. The time saving is an approximate workflow result, not a timed experimental comparison.</p></details>
-<ul class="tags" aria-label="Methods"><li>Question-level analysis</li><li>Assessment interpretation</li><li>Curriculum revision</li><li>Excel</li><li>Peer training</li></ul>
-</article>
+<article id="nexttask" aria-labelledby="nexttask-title"><div class="prose"><p class="context">An ongoing personal project</p><h2 id="nexttask-title">How this connects to NextTask</h2>
+<p><a href="https://pbangiola.github.io/nexttask/">NextTask</a> is a task-prioritization and focus-timer app I’m building. You sort what matters, choose work, and keep track of the time you spend on it. As it has grown to include projects and subtasks, it has also become a useful place to work through questions about how records relate to each other.</p>
+<p>Consider student assessment data. A score needs to stay attached to the right student, but it also needs its date and assessment context. Two scores are only useful as a comparison if you know what each one represents. In NextTask, a task needs to stay attached to the right project, and the project total needs to reflect the work that belongs to it.</p></div>
+<figure><a href="assets/data-work/records-and-context.svg" aria-label="Enlarge the record relationships illustration"><img src="assets/data-work/records-and-context.svg" width="1040" height="580" alt="Conceptual comparison: a student record connects to fall and spring assessment records; a NextTask project connects to tasks with estimates, elapsed time, and status." loading="lazy"></a><figcaption><strong>The relationship is part of the information.</strong> A score without its assessment context and a task without its project both leave you with something important missing. This is a conceptual illustration, not a reproduction of a school database or a display of real student records.</figcaption></figure>
+<div class="prose"><p>The public NextTask code gives me a way to show that kind of work without publishing anyone’s student data. The excerpt below builds two indexes: one to find a record by its ID, and another to find the records that belong to a particular parent. That makes the relationships available for the checks and calculations that follow.</p></div>
+<figure class="code"><a href="assets/data-work/record-relationships.svg" aria-label="Enlarge the source code image"><img src="assets/data-work/record-relationships.svg" alt="Verbatim NextTask JavaScript source, lines 38–50: indexNodes builds maps by record ID and parent ID, then returns both indexes." loading="lazy"></a><figcaption><strong>Build a usable foundation.</strong> Before calculating totals or checking for broken relationships, the code establishes which records exist and which records belong together.<a class="caption-link" href="https://github.com/pbangiola/nexttask/blob/3b42a27b27b0c02bca86a067d14974e143326617/backend/tree-integrity.js#L38-L50">Read this excerpt in its source context ↗</a></figcaption></figure>
+<div class="prose"><p>Project time introduces another question. If a project contains a smaller project, which itself contains tasks, the calculation needs to work from the bottom up. The opening of the rollup function below sorts projects by depth before it starts adding their time. It also keeps estimated time and time already spent as separate values.</p>
+<p>That last distinction is familiar from school data. Achievement and growth need different definitions; so do estimated and elapsed time. A total can be mathematically correct and still tell you the wrong thing if you’ve combined measures that answer different questions.</p></div>
+<figure class="code"><a href="assets/data-work/project-totals.svg" aria-label="Enlarge the project totals source image"><img src="assets/data-work/project-totals.svg" alt="Verbatim NextTask JavaScript source, lines 96–109: rollupProjectMetrics orders projects by descending depth, then initializes separate estimated and elapsed time totals." loading="lazy"></a><figcaption><strong>Keep different measures distinct.</strong> Nested projects are processed from the deepest level upward. Estimated time starts at zero for the rollup; elapsed time starts with the project’s own recorded time. The linked function shows how child totals are then added.<a class="caption-link" href="https://github.com/pbangiola/nexttask/blob/3b42a27b27b0c02bca86a067d14974e143326617/backend/tree-integrity.js#L96-L130">Read the full rollup function ↗</a></figcaption></figure>
+<div class="prose"><p>These are images of the public source, with its line numbers, rather than reconstructed examples of an old school system. NextTask is ongoing work, and the connection I’m making here is about the questions: what does a record represent, what does it belong to, and what should happen when it changes?</p><p><a href="https://pbangiola.github.io/nexttask/">Try NextTask</a> · <a href="https://github.com/pbangiola/nexttask">Explore the repository</a></p></div></article>
 
-<article class="case" id="knowledge" aria-labelledby="knowledge-title">
-<div class="case-number">Case study 04</div>
-<p class="context">Education software provider · Knowledge management</p>
-<h2 id="knowledge-title">Turning scattered knowledge into usable documentation</h2>
-<div class="columns"><div>
-<h3>The problem</h3>
-<p>A knowledge-management project had stalled. Teachers and support staff needed clear documentation for software with multiple products and customer-specific variations.</p>
-<h3>My work</h3>
-<p>I created, organized, and uploaded documentation, expanding an initial assignment covering one product to five. I documented customer-specific variations and made the process sustainable using the existing staff.</p>
-</div><div>
-<h3>What changed</h3>
-<p>I produced 200 pages in two months and implemented a knowledge base supporting scalable technical support for teachers across 15 states.</p>
-<h3>Why this belongs in a data portfolio</h3>
-<p>Information only helps when people can find it, understand which situation it applies to, and keep it current. Organizing the knowledge around real product and customer differences made it more useful to the people supporting learners.</p>
-</div></div>
-<div class="metric-grid" aria-label="Documentation scope">
-<div class="metric"><strong>200 pages</strong><span>Created, organized, and uploaded in two months</span></div>
-<div class="metric"><strong>1 → 5</strong><span>Products covered as the assignment expanded</span></div>
-<div class="metric"><strong>15 states</strong><span>Scope of teacher support served by the knowledge base</span></div>
-</div>
-<details><summary>Measurement and scope</summary><p>Page count, product coverage, and support geography describe the scope of the work. They do not establish a measured reduction in support tickets or resolution time; those outcomes are not claimed. The original documentation, customer configurations, and internal system details are not published.</p></details>
-<ul class="tags" aria-label="Methods"><li>Knowledge management</li><li>Technical writing</li><li>Information organization</li><li>Process improvement</li></ul>
-</article>
-
-<section class="case" id="approach" aria-labelledby="approach-title">
-<div class="case-number">How I work</div>
-<h2 id="approach-title">Start with the decision people need to make</h2>
-<p>I work backward from the question: what do we need to understand, what evidence would help, and what could change as a result? That keeps the analysis connected to the people doing the work.</p>
-<h3>Build a usable foundation</h3><p>Clear definitions, reliable records, access controls, and documentation make analysis repeatable. A process should still work when someone else has to run it.</p>
-<h3>Keep different measures distinct</h3><p>Achievement is different from growth. Accounts are different from learners. Prototype results are different from live-process results. Those distinctions affect the decisions a number can support.</p>
-<h3>Make the result actionable</h3><p>The output might be a revised lesson, a support process, a teacher conversation, or a better-organized knowledge base. The goal is to help someone do the next useful thing.</p>
-<h3>Tools I have used</h3><p>Python, R, Excel, Google Sheets, Tableau, Google Workspace, and PowerSchool. The case studies identify the tools supported by the available record; they do not imply that every tool was used on every project.</p>
-</section>
-<footer><p>A growing portfolio of selected work. Case studies can be expanded with additional methods and public or safely shareable examples as they become available.</p><a href="index.html">← Back to projects</a> · <a href="https://github.com/pbangiola">GitHub</a></footer>
-</main>
-</body>
-</html>
+<article id="knowledge" aria-labelledby="knowledge-title"><div class="prose"><p class="context">Education software support</p><h2 id="knowledge-title">The information also has to be findable.</h2>
+<p>At an education software provider, I took over a knowledge-management project that had stalled. The initial assignment covered one product. It grew to five, including customer-specific variations, and I produced, organized, and uploaded 200 pages of documentation in two months.</p>
+<p>The knowledge base supported technical support for teachers across 15 states. I also worked to make the process sustainable with the staff already there. A useful set of documents needs a way to stay useful as the products change.</p>
+<p>This connects to the rest of the work in a fairly practical way. Someone trying to solve a problem needs to find the relevant information, understand which situation it applies to, and know what to do next. That’s true whether they’re a support associate looking up a product variation, a teacher looking at assessment results, or someone opening NextTask to decide what to work on.</p></div></article>
+<section class="closing" id="approach" aria-labelledby="approach-title"><div class="prose"><h2 id="approach-title">What I’d like to show next</h2><p>I’m continuing to build out this part of the site. Public code gives me one way to show the mechanics. I’d also like to add more worked examples of how I organize a question, examine the evidence, and decide what to change, using material I can share without exposing the people behind it.</p><p>Across these projects I’ve used Python, R, Excel, Google Sheets, Tableau, Google Workspace, and PowerSchool. The tool depends on the job. Sometimes the most useful thing I can make is a script; sometimes it’s a spreadsheet that another teacher can use without me sitting next to them.</p></div></section>
+<footer class="prose"><a href="index.html">← Back to projects</a> · <a href="https://github.com/pbangiola">GitHub</a></footer></main>
+</body></html>
