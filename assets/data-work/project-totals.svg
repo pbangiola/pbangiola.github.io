@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="512" viewBox="0 0 860 512" role="img" aria-labelledby="title desc"><title id="title">Calculate nested projects from the bottom up</title><desc id="desc">Verbatim excerpt from NextTask backend/tree-integrity.js, lines 96–109, commit 3b42a27b27b0c02bca86a067d14974e143326617.</desc><rect width="860" height="512" rx="14" fill="#14242e"/><path d="M0 60H860" stroke="#3b4d57"/><text x="28" y="37" fill="#c0d1d7" font-family="monospace" font-size="17">NextTask / backend/tree-integrity.js</text>
+<text x="26" y="99" fill="#83969e" font-family="monospace" font-size="16">96</text>
+<text x="78" y="99" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3"></tspan><tspan fill="#a9d5c2">function</tspan><tspan fill="#ecf1f3"> rollupProjectMetrics(rows, uid, repairs) {</tspan></text>
+<text x="26" y="127" fill="#83969e" font-family="monospace" font-size="16">97</text>
+<text x="78" y="127" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> { byId, childrenByParent } = indexNodes(rows);</tspan></text>
+<text x="26" y="155" fill="#83969e" font-family="monospace" font-size="16">98</text>
+<text x="78" y="155" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> projects = rows</tspan></text>
+<text x="26" y="183" fill="#83969e" font-family="monospace" font-size="16">99</text>
+<text x="78" y="183" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        .filter(row =&gt; row.node_type === &#x27;project&#x27;)</tspan></text>
+<text x="26" y="211" fill="#83969e" font-family="monospace" font-size="16">100</text>
+<text x="78" y="211" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        .sort((a, b) =&gt; projectDepth(b, byId) - projectDepth(a, byId));</tspan></text>
+<text x="26" y="239" fill="#83969e" font-family="monospace" font-size="16">101</text>
+<text x="78" y="239" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> totals = </tspan><tspan fill="#a9d5c2">new</tspan><tspan fill="#ecf1f3"> Map();</tspan></text>
+<text x="26" y="267" fill="#83969e" font-family="monospace" font-size="16">102</text>
+<text x="78" y="267" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> now = Date.now();</tspan></text>
+<text x="26" y="295" fill="#83969e" font-family="monospace" font-size="16">103</text>
+<text x="78" y="295" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3"></tspan></text>
+<text x="26" y="323" fill="#83969e" font-family="monospace" font-size="16">104</text>
+<text x="78" y="323" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">    </tspan><tspan fill="#a9d5c2">for</tspan><tspan fill="#ecf1f3"> (</tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> project </tspan><tspan fill="#a9d5c2">of</tspan><tspan fill="#ecf1f3"> projects) {</tspan></text>
+<text x="26" y="351" fill="#83969e" font-family="monospace" font-size="16">105</text>
+<text x="78" y="351" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        </tspan><tspan fill="#a9d5c2">const</tspan><tspan fill="#ecf1f3"> children = childrenByParent.get(String(project.id)) || [];</tspan></text>
+<text x="26" y="379" fill="#83969e" font-family="monospace" font-size="16">106</text>
+<text x="78" y="379" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        </tspan><tspan fill="#a9d5c2">if</tspan><tspan fill="#ecf1f3"> (!children.length &amp;&amp; !project.estimated_from_children) </tspan><tspan fill="#a9d5c2">continue</tspan><tspan fill="#ecf1f3">;</tspan></text>
+<text x="26" y="407" fill="#83969e" font-family="monospace" font-size="16">107</text>
+<text x="78" y="407" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3"></tspan></text>
+<text x="26" y="435" fill="#83969e" font-family="monospace" font-size="16">108</text>
+<text x="78" y="435" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        </tspan><tspan fill="#a9d5c2">let</tspan><tspan fill="#ecf1f3"> estimatedMs = 0;</tspan></text>
+<text x="26" y="463" fill="#83969e" font-family="monospace" font-size="16">109</text>
+<text x="78" y="463" xml:space="preserve" style="white-space:pre" font-family="monospace" font-size="16"><tspan fill="#ecf1f3">        </tspan><tspan fill="#a9d5c2">let</tspan><tspan fill="#ecf1f3"> elapsedMs = Number(project.own_elapsed_ms || 0);</tspan></text>
+</svg>
